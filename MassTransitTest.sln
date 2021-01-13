@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransitTest.API", "MassTransitTest.API\MassTransitTest.API.csproj", "{75BF715F-9FFB-4B3C-86C7-9886C460DDCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransitTest.Console", "MassTransitTest.Console\MassTransitTest.Console.csproj", "{8F570BA7-2823-405D-B974-CBB133CBB0DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransitTest.ConsoleApp", "MassTransitTest.ConsoleApp\MassTransitTest.ConsoleApp.csproj", "{8F570BA7-2823-405D-B974-CBB133CBB0DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransitTest.Core", "MassTransitTest.Core\MassTransitTest.Core.csproj", "{A8797792-1960-4EB4-AD88-19B956FD8EB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,5 +46,17 @@ Global
 		{8F570BA7-2823-405D-B974-CBB133CBB0DE}.Release|x64.Build.0 = Release|Any CPU
 		{8F570BA7-2823-405D-B974-CBB133CBB0DE}.Release|x86.ActiveCfg = Release|Any CPU
 		{8F570BA7-2823-405D-B974-CBB133CBB0DE}.Release|x86.Build.0 = Release|Any CPU
+		{A8797792-1960-4EB4-AD88-19B956FD8EB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8797792-1960-4EB4-AD88-19B956FD8EB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8797792-1960-4EB4-AD88-19B956FD8EB2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A8797792-1960-4EB4-AD88-19B956FD8EB2}.Debug|x64.Build.0 = Debug|Any CPU
+		{A8797792-1960-4EB4-AD88-19B956FD8EB2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A8797792-1960-4EB4-AD88-19B956FD8EB2}.Debug|x86.Build.0 = Debug|Any CPU
+		{A8797792-1960-4EB4-AD88-19B956FD8EB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8797792-1960-4EB4-AD88-19B956FD8EB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8797792-1960-4EB4-AD88-19B956FD8EB2}.Release|x64.ActiveCfg = Release|Any CPU
+		{A8797792-1960-4EB4-AD88-19B956FD8EB2}.Release|x64.Build.0 = Release|Any CPU
+		{A8797792-1960-4EB4-AD88-19B956FD8EB2}.Release|x86.ActiveCfg = Release|Any CPU
+		{A8797792-1960-4EB4-AD88-19B956FD8EB2}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

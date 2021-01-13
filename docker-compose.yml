@@ -1,0 +1,24 @@
+version: "3.5"
+
+services:
+    seq:
+        image: datalust/seq:latest
+        container_name: masstransittest-seq
+        ports:
+            - "5341:80"
+        environment:
+            - ACCEPT_EULA=Y
+        networks:
+            - gateway-network
+    rabbitmq:
+        image: rabbitmq:3-management
+        container_name: masstransittest-rabbitmq
+        ports:
+            - "5672:5672"
+            - "15672:15672"
+        networks:
+            - gateway-network
+
+networks:
+    gateway-network:
+        name: gateway-network
