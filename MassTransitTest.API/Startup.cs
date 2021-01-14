@@ -14,6 +14,7 @@ using Microsoft.OpenApi.Models;
 using MassTransit;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Serilog;
 
 namespace MassTransitTest.API
 {
@@ -63,6 +64,7 @@ namespace MassTransitTest.API
 
             app.UseHttpsRedirection();
 
+            app.UseSerilogRequestLogging();
             app.UseRouting();
 
             app.UseAuthorization();
