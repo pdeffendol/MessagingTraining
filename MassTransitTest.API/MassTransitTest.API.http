@@ -1,0 +1,14 @@
+@MassTransitTest.API_HostAddress = http://localhost:5000
+
+POST {{MassTransitTest.API_HostAddress}}/work
+Content-Type: application/json
+
+{
+    "Message": "This is a test message",
+    "SecondsOfWork": 5
+}
+###
+
+POST {{MassTransitTest.API_HostAddress}}/work
+
+###
