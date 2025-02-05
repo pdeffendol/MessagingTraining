@@ -1,5 +1,3 @@
-version: "3.5"
-
 services:
     seq:
         image: datalust/seq:latest
