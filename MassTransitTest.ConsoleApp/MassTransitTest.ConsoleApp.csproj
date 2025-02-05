@@ -1,6 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk.Worker">
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>dotnet-MassTransitTest.ConsoleApp-FF4466CC-05B4-4054-A38A-FF98C17210C2</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>

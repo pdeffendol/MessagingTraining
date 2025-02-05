@@ -1,9 +1,8 @@
 using System;
-namespace MassTransitTest.Core
+namespace MassTransitTest.Core;
+
+public record FakeWorkRequest
 {
-    public record FakeWorkRequest
-    {
-        public int WorkDurationSeconds { get; init; }
-        public string CompletedMessage { get; init; }
-    }
+    public int WorkDurationSeconds { get; init; }
+    public string CompletedMessage { get; init; }
 }

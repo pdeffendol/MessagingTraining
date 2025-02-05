@@ -1,26 +1,23 @@
-using System.Threading.Tasks;
 using MassTransit;
 using MassTransitTest.Core;
-using Microsoft.Extensions.Logging;
 using SerilogTimings;
 
-namespace MassTransitTest.ConsoleApp
+namespace MassTransitTest.ConsoleApp;
+
+internal class FakeWorkRequestHandler : IConsumer<FakeWorkRequest>
 {
-    class FakeWorkRequestHandler : IConsumer<FakeWorkRequest>
+    ILogger<FakeWorkRequestHandler> _logger;
+
+    public FakeWorkRequestHandler(ILogger<FakeWorkRequestHandler> logger)
     {
-        ILogger<FakeWorkRequestHandler> _logger;
+        _logger = logger;
+    }
 
-        public FakeWorkRequestHandler(ILogger<FakeWorkRequestHandler> logger)
+    public async Task Consume(ConsumeContext<FakeWorkRequest> context)
+    {
+        using (Operation.Time("{Message}", context.Message.CompletedMessage))
         {
-            _logger = logger;
-        }
-
-        public async Task Consume(ConsumeContext<FakeWorkRequest> context)
-        {
-            using (Operation.Time("{Message}", context.Message.CompletedMessage))
-            {
-                await Task.Delay(context.Message.WorkDurationSeconds * 1000);
-            }
+            await Task.Delay(context.Message.WorkDurationSeconds * 1000);
         }
     }
 }
