@@ -1,4 +1,4 @@
-namespace MassTransitTest.API;
+namespace MassTransitTest.WebPublisher;
 
 public record WorkCommand
 {

@@ -15,6 +15,6 @@
     <PackageReference Include="SerilogTimings" Version="3.1.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MassTransitTest.Core\MassTransitTest.Core.csproj" />
+    <ProjectReference Include="..\MassTransitTest.Messages\MassTransitTest.Messages.csproj" />
   </ItemGroup>
 </Project>

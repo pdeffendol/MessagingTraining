@@ -1,5 +1,4 @@
-using System;
-namespace MassTransitTest.Core;
+namespace MassTransitTest.Messages;
 
 public record FakeWorkRequest
 {

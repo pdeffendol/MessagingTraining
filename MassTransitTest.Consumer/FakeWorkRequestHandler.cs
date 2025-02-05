@@ -1,8 +1,8 @@
 using MassTransit;
-using MassTransitTest.Core;
+using MassTransitTest.Messages;
 using SerilogTimings;
 
-namespace MassTransitTest.ConsoleApp;
+namespace MassTransitTest.Consumer;
 
 internal class FakeWorkRequestHandler : IConsumer<FakeWorkRequest>
 {
